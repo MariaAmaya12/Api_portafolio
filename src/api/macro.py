@@ -20,8 +20,7 @@ load_dotenv()
 logger = logging.getLogger(__name__)
 
 FRED_TIMEOUT = 5
-MACRO_CACHE_URL = "https://raw.githubusercontent.com/MariaAmaya12/Portafolio_Api/feat/macro-cache/data/macro_cache.json"
-
+MACRO_CACHE_URL = "https://raw.githubusercontent.com/MariaAmaya12/Api_portafolio/main/data/macro_cache.json"
 
 def _empty_fred_df() -> pd.DataFrame:
     return pd.DataFrame(columns=["date", "value"])
